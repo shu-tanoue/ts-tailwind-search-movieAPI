@@ -1,9 +1,8 @@
 "use client";
-
 import { useState } from "react";
 import { MovieCard } from "./MovieCard";
 import SearchBar from "./SearchBar";
-import { searchMovies } from "app/services/movie.service";
+import { searchMovies } from "@/app/services/movie.service";
 
 export const MovieSearch = () => {
   const [movies, setMovies] = useState([]);
