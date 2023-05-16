@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { MovieCard } from "./MovieCard";
 import SearchBar from "./SearchBar";
-import { searchMovies } from "../app/services/movie.service";
+import { searchMovies } from "../app/services/movie.service.ts";
 
 export const MovieSearch = () => {
   const [movies, setMovies] = useState([]);
