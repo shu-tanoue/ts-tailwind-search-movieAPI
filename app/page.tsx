@@ -1,3 +1,4 @@
+import MovieSearch from "@/components/MovieSearch";
 import Head from "next/head";
 
 export default function Home() {
@@ -8,8 +9,17 @@ export default function Home() {
         <meta name="description" content="A simple movie database for users" />
       </Head>
       <main className="container mx-auto py-10 px-4 flex flex-col items-center justify-center">
-        <h1 className="text-4x1 font-bold md-8 text-white">Movie Database</h1>
+        <h1 className="text-4xl font-bold md:text-8xl text-white">
+          Movie Database
+        </h1>
+
+        <MovieSearch />
       </main>
     </div>
   );
 }
+/*
+これはNext.jsで作成されたアプリケーションのホームページを定義しています。
+このコードは、ページタイトル、メタタグ、背景色、ページの中央に配置されたMovieSearchコンポーネントを含む、
+1つのdiv要素を返します。MovieSearchコンポーネントは、映画の検索機能を提供するために使用されます。メタデータには、
+ページのタイトルと説明が含まれています。*/
