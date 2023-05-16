@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const API_KEY = process.env.NEXT_APP_API_KEY;
-const API_BASE_URL = process.env.NEXT_APP_API_BASE_URL;
+const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
 
 const client = axios.create({
   baseURL: API_BASE_URL,
