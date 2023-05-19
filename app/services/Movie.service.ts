@@ -10,7 +10,7 @@ const client = axios.create({
 
 export const searchMovies = async (query: string) => {
   try {
-    const response = await client.get("../services/movie.service", {
+    const response = await client.get("/search/movie", {
       params: { query },
     });
 
